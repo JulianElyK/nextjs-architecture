@@ -53,9 +53,8 @@ src/
 │   ├── utils/
 │   └── config/
 │
-├── lib/                 # Infrastructure (non-React)
-│   ├── http/
-│   ├── storage/
+├── lib/                 # Infrastructure (non-React) & Third-party integration
+│   ├── http/            # BE API endpoints integration handler
 │   └── env.ts
 │
 └── types/               # (Optional) global shared types
@@ -133,23 +132,6 @@ modules/auth/
 - Everything else is private
 
 > If it is not exported here, it does not exist outside the module.
-
----
-
-### Why this is DDD-inspired (but frontend-appropriate)
-
-**Inspired by DDD**
-- Modules ≈ bounded contexts
-- Explicit contracts
-- Clear ownership of domain rules
-
-**Adapted for frontend reality**
-- UI is first-class
-- Hooks replace application services
-- No repository/service abstraction layers
-- API logic colocated with feature
-
-This gives **clarity without overengineering**.
 
 ---
 
