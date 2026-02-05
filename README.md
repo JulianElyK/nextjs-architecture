@@ -33,14 +33,14 @@
 ```txt
 src/
 ├── app/                 # Routing & composition only
-│   ├── layout.ts
+│   ├── layout.tsx
 │   └── (group)/
-│       ├── layout.ts
+│       ├── layout.tsx
 │       └── route/
-│           ├── layout.ts
-│           ├── page.ts
+│           ├── layout.tsx
+│           ├── page.tsx
 │           └── @slot
-│               └── page.ts
+│               └── page.tsx
 │
 ├── modules/             # Feature / domain modules
 │   ├── auth/
